@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Game Reviews</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>O'reviews</h1>
+
+        <div class="card">
+            <div class="card-header">
+                Sélectionner un jeu vidéo
+                <a class="btn btn-dark btn-sm text-white float-right" id="btnAddVideogame">Ajouter</a>
+            </div>
+            <div class="card-body">
+                <select class="form-control" id="videogameId">
+                    <option value="0">choisissez</option>
+                    <!-- <option value="1">Theme Hospital</option>
+                    <option value="2">NBA Jam 2020</option>
+                    <option value="3">Day of Tentacle</option> -->
+                </select>
+            </div>
+        </div>
+
+        <div id="review" class="my-4">
+            
+        </div>
+    </div>
+
+    <!-- Modal AddVideogame -->
+    <div class="modal fade" id="addVideogameModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="" id="addVideogameForm">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ajouter un jeu vidéo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="inputName">Titre</label>
+                        <input type="text" class="form-control" id="inputName" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEditor">Editeur</label>
+                        <input type="text" class="form-control" id="inputEditor" name="editor">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                    <button type="submit" class="validebtn btn btn-primary">Valider</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <!-- Balise template contenant le code HTML à cloner pour créer un élément "review" -->
+    <template id="reviewTemplate">
+        <div class="reviewContainer py-4 border-bottom">
+            <div class="row mb-2">
+                <div class="col-9">
+                    <h2 class="reviewTitle"></h2>
+                    <small class="text-muted font-weight-light">Par <span class="reviewAuthor"></span>, le <span class="reviewPublication"></span></small>
+
+                    <p class="reviewText"></p>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-muted">Titre : <span class="reviewVideogame text-dark"></span></li>
+                        <li class="list-group-item text-muted">&Eacute;diteur : <span class="reviewEditor text-dark"></span></li>
+                        <li class="list-group-item text-muted">Plate-forme : <span class="reviewPlatform text-dark"></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card border-primary text-center">
+                        <div class="card-header bg-primary text-white">
+                            Graphismes
+                        </div>
+                        <div class="card-body h2 font-weight-light">
+                            <span class="reviewDisplay display-4"></span> / 10
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-info text-center">
+                        <div class="card-header bg-info text-white">
+                            Gameplay
+                        </div>
+                        <div class="card-body h2 font-weight-light">
+                            <span class="reviewGameplay display-4"></span> / 10
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-success text-center">
+                        <div class="card-header bg-success text-white">
+                            Scénario
+                        </div>
+                        <div class="card-body h2 font-weight-light">
+                            <span class="reviewScenario display-4"></span> / 10
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-warning text-center">
+                        <div class="card-header bg-warning text-white">
+                            Durée de vie
+                        </div>
+                        <div class="card-body h2 font-weight-light">
+                            <span class="reviewLifetime display-4"></span> / 10
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Notre script JS -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

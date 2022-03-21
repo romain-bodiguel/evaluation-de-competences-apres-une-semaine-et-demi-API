@@ -1,0 +1,93 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="650" height="238" view_box="0 0 650 238" xmlns="http://www.w3.org/2000/svg" xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 le Mon, 12 Jul 2021 02:29:34</desc>
+
+<rect id="frame" x="0" y="0" width="650" height="238" fill="#f7f7f7" stroke="#808080" stroke-width="1" stroke-dasharray="2,2"></rect>
+
+<!-- Association RELATED TO -->
+<line x1="64" y1="119" x2="197" y2="119" stroke="#d6604d" stroke-width="2"></line>
+<text x="124" y="136.0" fill="#2166ac" font-family="Verdana" font-size="12">0,N</text>
+<line x1="331" y1="119" x2="197" y2="119" stroke="#d6604d" stroke-width="2"></line>
+<text x="249" y="136.0" fill="#2166ac" font-family="Verdana" font-size="12">1,1</text>
+<g id="association-RELATED TO">
+	<path d="M 229 94 a 14 14 90 0 1 14 14 V 119 h -92 V 108 a 14 14 90 0 1 14 -14" fill="#f4a582" stroke="#f4a582" stroke-width="0"></path>
+	<path d="M 243 119.0 v 11 a 14 14 90 0 1 -14 14 H 165 a 14 14 90 0 1 -14 -14 V 119.0 H 92" fill="#fddbc7" stroke="#fddbc7" stroke-width="0"></path>
+	<rect x="151" y="94" width="92" height="50" fill="none" rx="14" stroke="#d6604d" stroke-width="2"></rect>
+	<line x1="151" y1="119" x2="243" y2="119" stroke="#d6604d" stroke-width="1"></line>
+	<text x="158" y="111.7" fill="#000000" font-family="Verdana" font-size="12">RELATED TO</text>
+</g>
+
+<!-- Association RUNNING ON -->
+<line x1="331" y1="119" x2="467" y2="119" stroke="#d6604d" stroke-width="2"></line>
+<text x="392" y="136.0" fill="#2166ac" font-family="Verdana" font-size="12">1,1</text>
+<line x1="594" y1="119" x2="467" y2="119" stroke="#d6604d" stroke-width="2"></line>
+<text x="520" y="136.0" fill="#2166ac" font-family="Verdana" font-size="12">0,N</text>
+<g id="association-RUNNING ON">
+	<path d="M 501 94 a 14 14 90 0 1 14 14 V 119 h -96 V 108 a 14 14 90 0 1 14 -14" fill="#f4a582" stroke="#f4a582" stroke-width="0"></path>
+	<path d="M 515 119.0 v 11 a 14 14 90 0 1 -14 14 H 433 a 14 14 90 0 1 -14 -14 V 119.0 H 96" fill="#fddbc7" stroke="#fddbc7" stroke-width="0"></path>
+	<rect x="419" y="94" width="96" height="50" fill="none" rx="14" stroke="#d6604d" stroke-width="2"></rect>
+	<line x1="419" y1="119" x2="515" y2="119" stroke="#d6604d" stroke-width="1"></line>
+	<text x="426" y="111.7" fill="#000000" font-family="Verdana" font-size="12">RUNNING ON</text>
+</g>
+
+<!-- Entity PLATFORM -->
+<g id="entity-PLATFORM">
+	<g id="frame-PLATFORM">
+		<rect x="547" y="51" width="94" height="25" fill="#92c5de" stroke="#92c5de" stroke-width="0"></rect>
+		<rect x="547" y="76.0" width="94" height="111" fill="#d1e5f0" stroke="#d1e5f0" stroke-width="0"></rect>
+		<rect x="547" y="51" width="94" height="136" fill="none" stroke="#4393c3" stroke-width="2"></rect>
+		<line x1="547" y1="76" x2="641" y2="76" stroke="#4393c3" stroke-width="1"></line>
+	</g>
+	<text x="561" y="68.7" fill="#000000" font-family="Verdana" font-size="12">PLATFORM</text>
+	<text x="552" y="93.7" fill="#000000" font-family="Verdana" font-size="12">platform code</text>
+	<line x1="552" y1="96" x2="636" y2="96" stroke="#000000" stroke-width="1"></line>
+	<text x="552" y="110.7" fill="#000000" font-family="Verdana" font-size="12">name</text>
+	<text x="552" y="127.8" fill="#000000" font-family="Verdana" font-size="12">manufacturer</text>
+	<text x="552" y="144.8" fill="#000000" font-family="Verdana" font-size="12">status</text>
+	<text x="552" y="161.8" fill="#000000" font-family="Verdana" font-size="12">created_at</text>
+	<text x="552" y="178.8" fill="#000000" font-family="Verdana" font-size="12">updated_at</text>
+</g>
+
+<!-- Entity VIDEOGAME -->
+<g id="entity-VIDEOGAME">
+	<g id="frame-VIDEOGAME">
+		<rect x="9" y="51" width="110" height="25" fill="#92c5de" stroke="#92c5de" stroke-width="0"></rect>
+		<rect x="9" y="76.0" width="110" height="111" fill="#d1e5f0" stroke="#d1e5f0" stroke-width="0"></rect>
+		<rect x="9" y="51" width="110" height="136" fill="none" stroke="#4393c3" stroke-width="2"></rect>
+		<line x1="9" y1="76" x2="119" y2="76" stroke="#4393c3" stroke-width="1"></line>
+	</g>
+	<text x="26" y="68.7" fill="#000000" font-family="Verdana" font-size="12">VIDEOGAME</text>
+	<text x="14" y="93.7" fill="#000000" font-family="Verdana" font-size="12">videogame code</text>
+	<line x1="14" y1="96" x2="113" y2="96" stroke="#000000" stroke-width="1"></line>
+	<text x="14" y="110.7" fill="#000000" font-family="Verdana" font-size="12">name</text>
+	<text x="14" y="127.8" fill="#000000" font-family="Verdana" font-size="12">editor</text>
+	<text x="14" y="144.8" fill="#000000" font-family="Verdana" font-size="12">status</text>
+	<text x="14" y="161.8" fill="#000000" font-family="Verdana" font-size="12">created_at</text>
+	<text x="14" y="178.8" fill="#000000" font-family="Verdana" font-size="12">updated_at</text>
+</g>
+
+<!-- Entity REVIEW -->
+<g id="entity-REVIEW">
+	<g id="frame-REVIEW">
+		<rect x="275" y="9" width="112" height="25" fill="#92c5de" stroke="#92c5de" stroke-width="0"></rect>
+		<rect x="275" y="34.0" width="112" height="195" fill="#d1e5f0" stroke="#d1e5f0" stroke-width="0"></rect>
+		<rect x="275" y="9" width="112" height="220" fill="none" stroke="#4393c3" stroke-width="2"></rect>
+		<line x1="275" y1="34" x2="387" y2="34" stroke="#4393c3" stroke-width="1"></line>
+	</g>
+	<text x="306" y="26.7" fill="#000000" font-family="Verdana" font-size="12">REVIEW</text>
+	<text x="280" y="51.7" fill="#000000" font-family="Verdana" font-size="12">review code</text>
+	<line x1="280" y1="54" x2="353" y2="54" stroke="#000000" stroke-width="1"></line>
+	<text x="280" y="68.7" fill="#000000" font-family="Verdana" font-size="12">title</text>
+	<text x="280" y="85.7" fill="#000000" font-family="Verdana" font-size="12">text</text>
+	<text x="280" y="102.7" fill="#000000" font-family="Verdana" font-size="12">publication_date</text>
+	<text x="280" y="119.8" fill="#000000" font-family="Verdana" font-size="12">display_note</text>
+	<text x="280" y="136.8" fill="#000000" font-family="Verdana" font-size="12">gameplay_note</text>
+	<text x="280" y="153.8" fill="#000000" font-family="Verdana" font-size="12">scenario_note</text>
+	<text x="280" y="170.8" fill="#000000" font-family="Verdana" font-size="12">lifetime_note</text>
+	<text x="280" y="187.8" fill="#000000" font-family="Verdana" font-size="12">status</text>
+	<text x="280" y="204.8" fill="#000000" font-family="Verdana" font-size="12">created_at</text>
+	<text x="280" y="221.8" fill="#000000" font-family="Verdana" font-size="12">updated_at</text>
+</g>
+</svg>

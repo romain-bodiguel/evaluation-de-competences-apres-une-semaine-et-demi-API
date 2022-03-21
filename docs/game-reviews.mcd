@@ -1,0 +1,5 @@
+VIDEOGAME: videogame code, name, editor, status, created_at, updated_at
+RELATED TO,  0N VIDEOGAME, 11 REVIEW
+REVIEW: review code, title, text, publication_date, display_note, gameplay_note, scenario_note, lifetime_note, status, created_at, updated_at
+RUNNING ON, 11 REVIEW, ON PLATFORM
+PLATFORM: platform code, name, manufacturer, status, created_at, updated_at
